@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*tudo zerado*/
+}
+.body{
+    font-size: 1rem; /* Base para tamanho de fonte */
+}
+
+header{
+    width: 100%; /*largura */
+    background-color: #ef0e91;; /*cor*/
+    display: flex; /*para ficar na mesma linha*/
+    justify-content: space-around; /*organizar*/
+    align-items: center;
+    padding: 20px 0; /* aumentou o cabecalho*/
+
+}
+
+.bolinha{ /* chamei a div */
+    width: 50px;
+    height: 50px; /*altura*/
+    background-color: rgb(242, 60, 181);
+    border-radius: 25px; /*borda redonda */
+
+}
+.container{
+    display: flex;
+    align-items: center; /*alinhar para o centro*/
+}
+
+.nome{
+    margin-left: 20px; /*afastou da bolinha*/
+    color: white;
+}
+.menu li{
+    display: inline-block; /* saiu o pontinho*/
+    margin: 0 10px;
+}
+.menu li a{
+    font-size: 24px; /*aumenta a letra*/
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; /*mudou a letra */
+    padding: 10px 20px; /* aumentou a cor ao redor */
+    border-radius: 10px; /* arrendondou as bordas*/
+
+}
+.menu li a:hover{
+    background-color: #ec41ab80;
+}
+
+
+.texto{
+    text-align: center;
+    margin-top: 150px;
+}
+.destaque{
+    color: #ef0e91;
+    
+}
+
+.botao {
+    margin-left: 400px;
+    margin-top: 180px;
+    display: inline-block;
+    padding: 50px 220px;
+    font-size: 16px;
+    color: white;
+    background-color: #ef0e91; /* Cor do fundo do botão */
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    border-radius: 10px; /* Cantos arredondados */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Altera o cursor para mãozinha ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    z-index: 10;
+}
+
+.botao:hover {
+    background-color:  #ec41ab80;/* Cor de fundo quando o cursor está sobre o botão */
+}
+.deitado{
+    width: 600px;
+    margin-left: 380px;
+    margin-top: 145px;
+    
+    position: absolute;
+    z-index: 8; /* faz ficar em cima de outro elemento */
+    transform: rotate(5deg);
+}
+
+@media  screen and (max-width: 1900px){
+    
+    }
+    .deitado{
+        margin-top: -4px;
+        margin-left: 370px;
+        z-index: 10;
+        pointer-events: none;
+    }
+    .botao{
+        cursor: pointer; transition: background-color 0.4s ease;
+        padding: 50px 220px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    border-radius: 10px; /* Cantos arredondados */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Altera o cursor para mãozinha ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+    z-index: 11;
+    }
+    .botao:hover {
+        background-color:  #ec41ab80;
+    }
+
+
+@media  screen and (max-width: 1400px ){ 
+    .deitado{
+        margin-top: -05px;
+        margin-left: 370px;
+    }
+    .botao{
+        cursor: pointer; transition: background-color 0.4s ease;
+    }
+    .botao:hover {
+        background-color:  #ec41ab80;
+    }
+}
+
+
+@media  screen and (max-width: 1244px ){
+    .deitado{
+        margin-top: 71px;
+        margin-left: 350px;
+    }
+    .botao{
+        cursor: pointer; transition: 
+        background-color 0.4s ease;
+        margin-top: 215px;
+    }
+    .botao:hover {
+        background-color:  #ec41ab80;
+    }
+}
+
+@media  screen and (max-width: 950px){
+
+
+    .deitado{
+        margin-top: 70px;
+        margin-left: 100px;
+
+}
+.botao{
+    cursor: pointer; transition: background-color 0.4s ease;
+    margin-left: 150px;
+}
+.botao:hover {
+    background-color:  #ec41ab80;
+}
+header{
+    padding: 30px;
+}
+}
+
+@media  screen and (max-width: 450px){
+    /*cabeçalho*/
+
+    .menu {
+        text-align: center;
+    }
+
+    .deitado{
+        width: 400px;
+        margin-left: 0px;
+        margin-top: 155px;
+        
+        position: absolute;
+        z-index: 8; /* faz ficar em cima de outro elemento */
+        transform: rotate(5deg);
+        flex-direction: column-reverse;
+    }
+
+    
+    .botao{
+        align-items: center;
+        width: 400px;
+        margin-left: 5px;
+        margin-top: 105px;
+        padding: 40px 30px;
+        cursor: pointer; transition: background-color 0.4s ease;
+    }
+    .botao:hover {
+        background-color:  #ec41ab80;
+    }
+    .texto{
+        margin-top: 50px;
+    }
+    
+}
+.bolinha{
+    margin-left: 5px;
+}

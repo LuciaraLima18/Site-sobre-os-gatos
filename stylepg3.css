@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*tudo zerado*/
+    
+}
+header{
+    width: 100%; /*largura */
+    background-color: #ef0e91;; /*cor*/
+    display: flex; /*para ficar na mesma linha*/
+    justify-content: space-around; /*organizar*/
+    align-items: center;
+    padding: 20px 0; /* aumentou o cabecalho*/
+}
+.bolinha2{ /* chamei a div */
+    width: 50px;
+    height: 50px; /*altura*/
+    background-color: rgb(242, 60, 181);
+    border-radius: 25px; /*borda redonda */
+
+}
+.container2{
+    display: flex;
+    align-items: center; /*alinhar para o centro*/
+}
+
+.nome2{
+    margin-left: 20px; /*afastou da bolinha*/
+    color: white;
+}
+.menu2 li{
+    display: inline-block; /* saiu o pontinho*/
+    margin: 0 10px;
+}
+.menu2 li a{
+    font-size: 24px; /*aumenta a letra*/
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; /*mudou a letra */
+    padding: 10px 20px; /* aumentou a cor ao redor */
+    border-radius: 10px; /* arrendondou as bordas*/
+
+}
+.menu2 li a:hover{
+    background-color: #ec41ab80;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 40px;
+    
+    
+}
+.destaque{
+    color: #ef0e91;
+}
+
+
+
+
+#listaTarefas {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaTarefas li {
+    padding: 20px;
+    background:rgb(242, 57, 177);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+#inputPesquisa {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#btnFiltrar {
+    background-color: #ef0e91; 
+}
+
+#btnResetarFiltro {
+    background-color: #ef0e91; 
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnAcao {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ef0e91;
+}
+
+.btnAcao:hover {
+    color: #ef0e91;
+}
+
+.textoTarefa {
+    flex: 1;
+}
